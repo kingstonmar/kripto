@@ -43,8 +43,9 @@ Hasil enkripsi/dekripsi dapat diunduh dalam bentuk file.
 
 
 
+
 # 🚀 Cara Menggunakan
-        1. Clone Repository
+Clone Repository
 
                 git clone https://github.com/username/crypto-tool.git
 
