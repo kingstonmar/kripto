@@ -8,7 +8,7 @@ Crypto Tool adalah aplikasi web berbasis Flask yang memungkinkan pengguna untuk 
 
 
 
-#🌟 Fitur Utama
+# 🌟 Fitur Utama
 
 Enkripsi & Dekripsi Teks:
 
@@ -80,7 +80,7 @@ Hasil enkripsi/dekripsi dapat diunduh dalam bentuk file.
 
 
 
-#📂 Struktur Proyek
+# 📂 Struktur Proyek
 
     crypto-tool/
     ├── app.py                  # File utama aplikasi Flask
@@ -93,7 +93,7 @@ Hasil enkripsi/dekripsi dapat diunduh dalam bentuk file.
 
 
 
-#📦 Dependencies
+# 📦 Dependencies
 
   Proyek ini menggunakan library berikut:
 
@@ -109,7 +109,7 @@ Hasil enkripsi/dekripsi dapat diunduh dalam bentuk file.
 
 
 
-#🤝 Kontribusi
+# 🤝 Kontribusi
 
 Kontribusi sangat diterima! Jika Anda ingin berkontribusi, ikuti langkah berikut:
 
