@@ -10,18 +10,18 @@ Crypto Tool adalah aplikasi web berbasis Flask yang memungkinkan pengguna untuk 
 
 # 🌟 Fitur Utama
 
-Enkripsi & Dekripsi Teks:
+  Enkripsi & Dekripsi Teks:
 
 Masukkan teks dan kunci untuk melakukan enkripsi atau dekripsi.
 
 
 
-Enkripsi & Dekripsi File:
+  Enkripsi & Dekripsi File:
 
 Unggah file untuk dienkripsi atau didekripsi.
 
 
-Algoritma Kriptografi yang Didukung:
+  Algoritma Kriptografi yang Didukung:
 
 -🧩 XOR: Cipher sederhana berbasis operasi XOR.
 
@@ -31,13 +31,13 @@ Algoritma Kriptografi yang Didukung:
 
 -🛡️ AES: Algoritma block cipher dengan kunci 128-bit (standar enkripsi modern).
 
-Mode Operasi (untuk DES dan AES):
+  Mode Operasi (untuk DES dan AES):
 
 -ECB (Electronic Codebook)
 
 -CBC (Cipher Block Chaining)
 
-Download Hasil:
+  Download Hasil:
 
 Hasil enkripsi/dekripsi dapat diunduh dalam bentuk file.
 
