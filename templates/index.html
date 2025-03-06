@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Tool</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f8ff;
+            color: #004080;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin-top: 50px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 255, 0.2);
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .form-label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">🔒 Crypto Tool</h2>
+        <form method="POST" enctype="multipart/form-data" novalidate>
+            <!-- Input Teks -->
+            <div class="mb-3">
+                <label class="form-label">Masukkan Teks:</label>
+                <input type="text" class="form-control" name="text" placeholder="Teks yang akan dienkripsi/dekripsi">
+            </div>
+            
+            <!-- Input Kunci -->
+            <div class="mb-3">
+                <label class="form-label">Masukkan Kunci:</label>
+                <input type="text" class="form-control" name="key" placeholder="Kunci enkripsi">
+            </div>
+            
+            <!-- Pilih Algoritma -->
+            <div class="mb-3">
+                <label class="form-label">Pilih Algoritma:</label>
+                <select class="form-select" name="algorithm">
+                    <option value="XOR">XOR</option>
+                    <option value="RC4">RC4</option>
+                    <option value="DES">DES</option>
+                    <option value="AES">AES</option>
+                </select>
+            </div>
+            
+            <!-- Pilih Mode (Untuk DES & AES) -->
+            <div class="mb-3">
+                <label class="form-label">Pilih Mode (hanya untuk DES & AES):</label>
+                <select class="form-select" name="mode">
+                    <option value="ECB">ECB</option>
+                    <option value="CBC">CBC</option>
+                </select>
+            </div>
+            
+            <!-- Pilih Aksi -->
+            <div class="mb-3">
+                <label class="form-label">Aksi:</label>
+                <select class="form-select" name="action">
+                    <option value="Encrypt">Enkripsi</option>
+                    <option value="Decrypt">Dekripsi</option>
+                </select>
+            </div>
+            
+            <!-- Upload File -->
+            <div class="mb-3">
+                <label class="form-label">Upload File (Opsional):</label>
+                <input type="file" class="form-control" name="file">
+            </div>
+
+            <!-- Tombol Proses -->
+            <button type="submit" class="btn btn-primary w-100">🔄 Proses</button>
+        </form>
+
+        <!-- Hasil Enkripsi/Dekripsi -->
+        {% if result %}
+        <div class="mt-4 p-3 bg-light border rounded">
+            <h5>Hasil:</h5>
+            <p class="text-break">{{ result }}</p>
+        </div>
+        {% endif %}
+
+        <!-- Tombol Download Jika Ada File -->
+        {% if download_file %}
+        <div class="mt-4 p-3 bg-light border rounded text-center">
+            <h5>Download Hasil:</h5>
+            <a href="{{ url_for('download', filename=download_file) }}" class="btn btn-success">⬇ Download File</a>
+        </div>
+        {% endif %}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
