@@ -43,13 +43,12 @@ Hasil enkripsi/dekripsi dapat diunduh dalam bentuk file.
 
 
 
-🚀 Cara Menggunakan
+# 🚀 Cara Menggunakan
+        1. Clone Repository
 
-1. Clone Repository
+                git clone https://github.com/username/crypto-tool.git
 
-        git clone https://github.com/username/crypto-tool.git
-
-cd crypto-tool
+                cd crypto-tool
 
 
 2. Install Dependencies
