@@ -3,7 +3,7 @@ Tugas Kriptografi Kingston &amp; Marthin
 
 
 
-🔒 Crypto Tool
+# 🔒 Crypto Tool
 
 Crypto Tool adalah aplikasi web berbasis Flask yang memungkinkan pengguna untuk melakukan enkripsi dan dekripsi teks atau file menggunakan berbagai algoritma kriptografi. Aplikasi ini dilengkapi dengan antarmuka pengguna yang ramah menggunakan Bootstrap.
 
@@ -47,7 +47,7 @@ Hasil enkripsi/dekripsi dapat diunduh dalam bentuk file.
 
 1. Clone Repository
 
-git clone https://github.com/username/crypto-tool.git
+        git clone https://github.com/username/crypto-tool.git
 
 cd crypto-tool
 
